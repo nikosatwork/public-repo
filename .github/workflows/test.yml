@@ -1,6 +1,6 @@
 name: Run test and upload coverage
 
-on: push
+on: workflow_dispatch
 
 jobs:
   test:
@@ -25,4 +25,4 @@ jobs:
         uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: spalmurray-codecov-org/public-repo
+          slug: nikosatwork/public-repo
